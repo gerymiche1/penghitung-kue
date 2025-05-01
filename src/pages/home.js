@@ -1,3 +1,4 @@
+import html2canvas from 'html2canvas';
 import React, { useState } from 'react';
 
 export const Home = (props) => {
@@ -140,6 +141,15 @@ export const Home = (props) => {
         setTimeout(() => setIsSubmitting(false), 300);
     };
 
+    const handleDownloadImage = () => {
+        html2canvas(document.body).then(canvas => {
+            const link = document.createElement('a');
+            link.download = 'page-screenshot.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        });
+    };
+
     return (
         <div className="page-layout">
             <div className="form-section">
@@ -207,6 +217,9 @@ export const Home = (props) => {
                         </p>
                     </div>
                 )}
+                <button onClick={handleDownloadImage} style={{ margin: '1rem 0' }}>
+                    Download Page as Image
+                </button>
             </div>
         </div>
     );
