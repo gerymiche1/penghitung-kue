@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/penghitung-kue/static/css/main.063c59b2.css",
+    "main.js": "/penghitung-kue/static/js/main.8c83432b.js",
+    "index.html": "/penghitung-kue/index.html",
+    "main.063c59b2.css.map": "/penghitung-kue/static/css/main.063c59b2.css.map",
+    "main.8c83432b.js.map": "/penghitung-kue/static/js/main.8c83432b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.063c59b2.css",
+    "static/js/main.8c83432b.js"
+  ]
+}
